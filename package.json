@@ -14,7 +14,8 @@
     "bootstrap"
   ],
   "author": {
-    "name": "Johnathon Sanders"
+    "name": "Johnathon Sanders",
+    "email": "outdooricon@gmail.com"
   },
   "license": "MIT",
   "main": "dist/js/bootstrap",
