@@ -1,0 +1,36 @@
+{
+  "name": "bootstrap-flexbox-static",
+  "version": "4.0.0-alpha.4",
+  "description": "Bootstrap 4 static files with flexbox mode enabled",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build-sass && npm run postcss && npm run build-min-sass && npm run copy-js",
+    "build-sass": "node-sass src/main.scss dist/css/bootstrap.css --importer node_modules/node-sass-import",
+    "build-min-sass": "cleancss --source-map --skip-advanced -c ie9 -o dist/css/bootstrap.min.css dist/css/bootstrap.css",
+    "copy-js": "copyfiles -f src/../node_modules/bootstrap/dist/js/* dist/js",
+    "postcss": "postcss --config node_modules/bootstrap/grunt/postcss.js --replace dist/css/bootstrap.css"
+  },
+  "keywords": [
+    "bootstrap"
+  ],
+  "author": {
+    "name": "Johnathon Sanders"
+  },
+  "license": "MIT",
+  "main": "dist/js/bootstrap",
+  "dependencies": {
+    "bootstrap": "4.0.0-alpha.4"
+  },
+  "devDependencies": {
+    "clean-css": "^3.4.19",
+    "copyfiles": "^1.0.0",
+    "node-sass": "^3.10.0",
+    "node-sass-import": "^1.0.5"
+  },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/outdooricon/bootstrap-flexbox-static"
+  },
+  "sass": "src/main.scss",
+  "style": "dist/css/bootstrap.css"
+}
