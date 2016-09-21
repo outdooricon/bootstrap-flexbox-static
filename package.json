@@ -30,7 +30,7 @@
   },
   "repository" : {
     "type" : "git",
-    "url" : "https://github.com/outdooricon/bootstrap-flexbox-static"
+    "url" : "git+ssh://git@github.com/outdooricon/bootstrap-flexbox-static.git"
   },
   "sass": "src/main.scss",
   "style": "dist/css/bootstrap.css"
